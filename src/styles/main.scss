@@ -1,0 +1,18 @@
+// main.scss
+
+// Abstracts: Variables, Functions, Mixins
+@import 'abstracts/_fonts';
+@import 'abstracts/_variables';
+@import 'abstracts/_functions';
+@import 'abstracts/_mixins';
+
+body {
+  @include cairoFont(400); // Regular weight
+  margin: 0;
+  main {
+    margin-top: 60px;
+  }
+  p {
+    margin: 0;
+  }
+}

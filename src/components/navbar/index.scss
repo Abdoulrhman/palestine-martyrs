@@ -1,0 +1,43 @@
+@import "../../styles/main.scss";
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff; // Replace with the actual color from your design
+  padding: 10px 20px;
+
+  .menu {
+    a {
+      text-decoration: none;
+      color: #000000; // Replace with the actual color from your design
+      margin-right: 20px;
+      &:hover {
+        color: $color-primary; // Define this in your variables.less
+      }
+    }
+  }
+
+  .martyrs-count {
+    display: flex;
+    align-items: baseline;
+
+    .count-symbol {
+      font-size: 20px;
+      color: $color-secondary; // Define this in your variables.less
+    }
+
+    .count-number {
+      margin-left: 5px;
+      font-size: 24px;
+      font-weight: bold;
+      color: $highlight-color; // Define this in your variables.less
+    }
+
+    .count-text {
+      margin-left: 5px;
+      font-size: 16px;
+      color: $color-text; // Define this in your variables.less
+    }
+  }
+}

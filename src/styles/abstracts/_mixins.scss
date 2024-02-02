@@ -1,0 +1,12 @@
+@import '../abstracts/variables';
+
+@mixin cairoFont($weight) {
+  font-family: 'Cairo', sans-serif;
+  font-weight: $weight;
+  font-style: normal;
+}
+@mixin maxWidth($width) {
+  max-width: $width;
+  margin: 0 auto;
+  padding: $spacing-md;
+}

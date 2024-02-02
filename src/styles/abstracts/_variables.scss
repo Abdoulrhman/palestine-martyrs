@@ -1,0 +1,53 @@
+// Define your color palette
+$color-primary: #3498db; // Example primary color
+$color-secondary: #34495e; // Example secondary color
+$color-tertiary: #cbf1f5; // Example tertiary color
+$color-background: #ffffff; // Background color
+$color-text: #333333; // Primary text color
+$color-text-secondary: #767676; // Secondary text color
+$color-border: #e2e2e2; // Border color
+$highlight-color: #e74c3c; // Highlight color
+
+// Define font sizes
+$font-size-small: 0.875rem; // 14px
+$font-size-regular: 1rem; // 16px, often the base font size for body text
+$font-size-large: 1.25rem; // 20px
+$font-size-xlarge: 1.5rem; // 24px
+
+// Define font weights
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-bold: 700;
+$font-weight-black: 900;
+
+// Define spacing scale (optional)
+$spacing-xs: 0.5rem; // 8px
+$spacing-sm: 1rem; // 16px
+$spacing-md: 1.5rem; // 24px
+$spacing-lg: 2rem; // 32px
+$spacing-xl: 3rem; // 48px
+$spacing-xxl: 4rem; // 64px
+
+// Define breakpoints (optional)
+$breakpoint-xs: 320px;
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+
+// Define z-index values (optional)
+$z-index-1: 100;
+$z-index-2: 200;
+$z-index-3: 300;
+$z-index-4: 400;
+$z-index-5: 500;
+$z-index-6: 600;
+$z-index-7: 700;
+$z-index-8: 800;
+$z-index-9: 900;
+$z-index-10: 1000;
+
+// Define transition values (optional)
+$transition-duration: 0.3s;
+$transition-timing-function: ease-in-out;
+$transition-delay: 0s;

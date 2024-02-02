@@ -1,0 +1,24 @@
+@import "../../styles/main.scss";
+
+.header {
+  @include maxWidth(1200px);
+}
+
+// MartyrsCounter.scss
+.martyrs-counter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+
+  .counter-title {
+    font-size: 1.5rem;
+    // Other title styles
+  }
+
+  .counter-number {
+    font-size: 2rem;
+    font-weight: bold;
+    // Other number styles
+  }
+}

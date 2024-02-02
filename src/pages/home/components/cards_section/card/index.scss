@@ -1,0 +1,36 @@
+// Card.scss
+.card {
+  width: 250px; // adjust the width as per your layout
+  margin: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  overflow: hidden;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+
+  .card-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .card-content {
+    padding: 15px;
+
+    .card-title {
+      font-size: 1.2em;
+      margin-bottom: 10px;
+    }
+
+    .card-description {
+      font-size: 0.9em;
+      margin-bottom: 15px;
+    }
+
+    .card-more {
+      color: #007bff;
+      text-decoration: none;
+      font-size: 0.9em;
+    }
+  }
+}
