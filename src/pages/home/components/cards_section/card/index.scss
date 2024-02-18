@@ -1,6 +1,8 @@
 // Card.scss
+@import "../../../../../styles/main.scss";
+
 .card {
-  width: 250px; // adjust the width as per your layout
+  padding: 15px;
   margin: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   border-radius: 4px;
@@ -8,29 +10,51 @@
   background: #fff;
   display: flex;
   flex-direction: column;
-
+  // border: 1px solid rgb(185, 10, 10);
+  .image-container {
+    width: 180px;
+  }
   .card-image {
     width: 100%;
     height: auto;
   }
 
-  .card-content {
-    padding: 15px;
+  .card-info {
+    // border: 1px solid blue;
+    display: flex;
+    flex-direction: row;
+    // justify-content: center;
+    align-items: center;
+    margin-bottom: 16px;
 
     .card-title {
       font-size: 1.2em;
-      margin-bottom: 10px;
+      margin-bottom: 25px;
     }
-
-    .card-description {
-      font-size: 0.9em;
-      margin-bottom: 15px;
+    .dates {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      .date-col {
+        width: 30%;
+        h4 {
+          color: $color-text-secondary;
+          font-weight: 500;
+          margin-bottom: 10px;
+        }
+      }
     }
-
-    .card-more {
-      color: #007bff;
-      text-decoration: none;
-      font-size: 0.9em;
-    }
+  }
+  .card-description {
+    font-size: 0.9em;
+    margin-bottom: 15px;
+    color: $color-text;
+  }
+  .card-more {
+    color: $highlight-color;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 700;
+    align-self: end;
   }
 }

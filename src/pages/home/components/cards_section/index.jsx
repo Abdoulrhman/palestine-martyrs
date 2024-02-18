@@ -3,10 +3,12 @@ import Card from "./card";
 import "./index.scss";
 
 const CardContainer = ({ cards }) => {
+
   return (
-    <div className="card-container">
-      {cards.map((card, index) => (
-        <Card key={index} {...card} />
+    <div className="card-container"  >
+      {cards?.map((card, index) => (
+        <Card key={index}
+          cardInfo={card} />
       ))}
     </div>
   );
