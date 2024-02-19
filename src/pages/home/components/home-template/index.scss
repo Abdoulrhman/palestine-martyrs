@@ -1,0 +1,22 @@
+@import "../../../../styles/main.scss";
+
+.pagination-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.page-number:hover {
+  cursor: pointer;
+}
+.page-number {
+  //   background-color: gray;
+  list-style-type: none;
+  padding: 10px 13px;
+  border: 1px solid #c1baba;
+}
+.active-page {
+  background-color: $highlight-color2;
+  border: 1px solid $highlight-color2;
+  color: white;
+}

@@ -10,13 +10,19 @@
   background: #fff;
   display: flex;
   flex-direction: column;
-  // border: 1px solid rgb(185, 10, 10);
   .image-container {
     width: 180px;
   }
   .card-image {
     width: 100%;
     height: auto;
+  }
+  .card-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 16px;
+    // border: 1px solid blue;
   }
 
   .card-info {
@@ -37,6 +43,9 @@
       flex-direction: row;
       .date-col {
         width: 30%;
+        display: flex;
+        flex-direction: column;
+
         h4 {
           color: $color-text-secondary;
           font-weight: 500;
@@ -49,12 +58,36 @@
     font-size: 0.9em;
     margin-bottom: 15px;
     color: $color-text;
+    width: 100%;
   }
   .card-more {
-    color: $highlight-color;
+    color: $highlight-color2;
     text-decoration: none;
-    font-size: 1.2em;
-    font-weight: 700;
+    font-size: 1em;
+    font-weight: 600;
     align-self: end;
+    display: flex;
+    // align-items: end;
+  }
+  .card-more :hover{
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 700px) {
+  .card-info {
+    flex-direction: column !important;
+  }
+  .card-content {
+    align-items: center;
+  }
+  .card .card-info .dates {
+    justify-content: center;
+  }
+  .date-col {
+    align-items: center;
+  }
+  .card .card-info .card-title {
+    margin-top: 25px;
   }
 }

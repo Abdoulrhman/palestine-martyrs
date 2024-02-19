@@ -1,0 +1,28 @@
+@import "../../../../styles/main.scss";
+
+.filter-container {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  //   border: 10px solid green;
+
+  .filter-number :hover {
+    cursor: pointer;
+  }
+  .filter-number {
+    margin: 5px;
+    border: 1px solid $highlight-color2;
+    border: 1px solid #9c3818;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: $font-size-regular;
+  }
+  .all {
+    width: 70px;
+  }
+}

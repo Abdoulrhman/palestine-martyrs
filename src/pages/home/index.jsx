@@ -1,7 +1,7 @@
 import Header from "../../components/header";
-import CardContainer from "./components/cards_section";
 import "./index.scss";
-import avatar from '../../assets/images/avatar.jpg'
+import avatar from "../../assets/images/avatar.jpg";
+import HomeTemplate from "./components/home-template";
 
 const Home = () => {
   const cardData = [
@@ -12,7 +12,7 @@ const Home = () => {
       image: avatar,
       deathDate: " 2 Dec 2023",
       deathPlace: "gaza",
-      age: 18
+      age: 18,
     },
     {
       title: "Title 2",
@@ -21,47 +21,66 @@ const Home = () => {
       image: avatar,
       deathDate: " 2 Dec 2023",
       deathPlace: "gaza",
-      age: 18
-    },
-
-  ];
-  const martyrs = [
-    {
-      imageUrl: "https://via.placeholder.com/150",
-      location: "Description 1",
-      name: "Test",
-      date: "Date 1",
+      age: 18,
     },
     {
-      imageUrl: "https://via.placeholder.com/150",
-      location: "Description 2",
-      name: "Test",
-      date: "Date 2",
-    },
-    {
-      imageUrl: "https://via.placeholder.com/150",
-      location: "Description 3",
-      name: "Test",
-      date: "Date 3",
-    },
-    {
-      imageUrl: "https://via.placeholder.com/150",
-      location: "Description 4",
-      name: "Test",
-      date: "Date 4",
+      title: "Muhamed",
+      description:
+        "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
+      image: avatar,
+      deathDate: " 2 Dec 2023",
+      deathPlace: "gaza",
+      age: 18,
     },
 
     {
-      imageUrl: "https://via.placeholder.com/150",
-      location: "Description 5",
-      name: "Test",
-      date: "Date 5",
+      title: "ahmed",
+      description:
+        "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
+      image: avatar,
+      deathDate: " 2 Dec 2023",
+      deathPlace: "gaza",
+      age: 18,
+    }, {
+      title: "Title 2",
+      description:
+        "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
+      image: avatar,
+      deathDate: " 2 Dec 2023",
+      deathPlace: "gaza",
+      age: 18,
+    }, {
+      title: "Title 2",
+      description:
+        "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
+      image: avatar,
+      deathDate: " 2 Dec 2023",
+      deathPlace: "gaza",
+      age: 18,
+    }, {
+      title: "Title 2",
+      description:
+        "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
+      image: avatar,
+      deathDate: " 2 Dec 2023",
+      deathPlace: "gaza",
+      age: 18,
+    }, {
+      title: "Title 2",
+      description:
+        "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
+      image: avatar,
+      deathDate: " 2 Dec 2023",
+      deathPlace: "gaza",
+      age: 18,
     },
   ];
+
   return (
     <>
       <Header />
-      <CardContainer cards={cardData} />
+
+      <HomeTemplate cards={cardData} />
     </>
   );
 };
